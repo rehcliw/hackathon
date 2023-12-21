@@ -38,21 +38,10 @@ function getRandomArbitrary(min, max) {
 }
 
 let answer = answers[getRandomArbitrary(0, answers.length - 1)];
-console.log(answer);
+let answerElement = document.createElement('div');
+answerElement.innerText = answer;
+answerElement.setAttribute('id', 'answer');
+document.querySelector('body').appendChild(answerElement);
 
-// 8Ball - icon
-// activates on click
-// sounds bites of water
-/*
-var audio = new Audio('audio_file.mp3');
+var audio = new Audio('assets/magic-8-ball-sound.wav');
 audio.play();
-function play() {
-  var audio = new Audio('https://interactive-examples.mdn.mozilla.net/media/cc0-audio/t-rex-roar.mp3');
-  audio.play();
-}
-.
-.
-.
-<button onclick="play()">Play Audio</button>
-*/
-
