@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "8 Ball",
+  "version": "1.0",
+  "action": {
+    "default_popup": "index.html"
+  },
+  "description": "Makes a suggestion",
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["./main.js"]
+    }
+  ]
+}
